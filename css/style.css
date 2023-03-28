@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100hv;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/loki-bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+header nav img {
+    width: 200px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+header nav ul li {
+    list-style-type: none;
+}
+
+header nav ul li a:link,
+header nav ul li a:visited {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+header nav ul li a:hover {
+    transition: 0.5s;
+    color: #0c8604;
+    text-shadow: 2px 2px 3px black;
+}
+
+.container {
+    height: 840px;
+    width: 1700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #ffffff;
+}
+
+main {
+    width: 850px;
+}
+
+main .contents {
+    width: 100%;
+    height: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main .contents p {
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+}
+
+button {
+    width: fit-content;
+    color: #ffffff;
+    padding: 8px;
+    font-size: 13px;
+    border: none;
+    border-radius: 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    align-self: center;
+    background-color: rgb(1, 41, 8);
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #086202;
+    color: #ffffff;
+    text-shadow: 2px 2px 3px #000000;
+    color: #cdf1cb;
+}
+
+footer {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*table version*/
+
+@media(max-width:1024px) {
+    .container {
+        width: 1000px;
+        height: 650px;
+    }
+}
+
+main {
+    width: 500px;
+    height: 400px;
+}
+
+main .contents {
+    width: 100%;
+    height: 400px;
+}
+
+
+/*mobli version*/
+
+@media(max-width:425px) {
+    body {
+        background-image: url(../assets/loki-bg-mobile.png);
+    }
+    .container {
+        width: 320px;
+        height: 600px;
+    }
+    header {
+        width: 100%;
+        height: 56px;
+    }
+    header nav ul {
+        display: none;
+    }
+    header nav img {
+        width: 140px;
+    }
+    main {
+        width: 100%;
+        height: 240px;
+    }
+    main .contents {
+        width: 100%;
+        height: 300px;
+    }
+}
